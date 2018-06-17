@@ -23,7 +23,14 @@
       (fast-expt-iter
         (square num)
         (div exp 2)
-        (if (= (modulo exp 2) 1) (* acc num) acc)))))
+        (if (= (modulo exp 2) 1)
+          (* acc num)
+          acc
+        )
+      )
+    )
+  )
+)
 
 (define f fast-expti)
 
